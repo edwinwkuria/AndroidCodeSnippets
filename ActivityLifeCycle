@@ -1,0 +1,43 @@
+ @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        Log.d("Life Cycle Event","In OnCreate()");
+    }
+
+    @Override
+    protected void onStart() {
+        super.onStart();
+        Log.d("Life Cycle Event:","In OnStart()");
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        Log.d("Life Cycle Event:", "In OnResume()");
+    }
+
+    @Override
+    protected void onPause() {
+        super.onPause();
+        Log.d("Life Cycle Event:", "In OnPause()");
+    }
+
+    @Override
+    protected void onStop() {
+        super.onStop();
+        Log.d("Life Cycle Event:", "In OnStop()");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d("Life Cycle Event:", "In OnDestroy()");
+    }
+
+    @Override
+    protected void onRestart() {
+        super.onRestart();
+        Log.d("Life Cycle Event:", "In OnRestart()");
+    }
