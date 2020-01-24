@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Udemy Application</string>
+    <string name="id_hint">Enter Id Number</string>
+    <string name="submit_button">Submit</string>
+    <string name="text">Text</string>
+    <string name="dob">Date of birth:</string>
+    <string name="gender">Gender:</string>
+    <string name="nationality">Nationality:</string>
+    <string name="newline">\\n</string>
+</resources>
