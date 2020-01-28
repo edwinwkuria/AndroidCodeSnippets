@@ -5,4 +5,5 @@ Add an intent filter:
                 <action android:name="android.intent.action.{{Name of action}}" />
 
                 <category android:name="android.intent.category.{{ Default}}" />
+                check for other requirements such as data
             </intent-filter>
