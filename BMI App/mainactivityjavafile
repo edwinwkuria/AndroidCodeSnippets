@@ -1,0 +1,62 @@
+package com.example.udemyapplication;
+
+import androidx.appcompat.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+import android.widget.Toast;
+
+public class MainActivity extends AppCompatActivity {
+    EditText etKilograms;
+    EditText etCentimetres;
+    Button btnSubmit;
+    TextView tvResults;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+
+        etKilograms = findViewById(R.id.etKilograms);
+        etCentimetres = findViewById(R.id.etCentimetres);
+        btnSubmit = findViewById(R.id.btnSubmit);
+        tvResults = findViewById(R.id.tvResults);
+        tvResults.setVisibility(View.GONE);
+        btnSubmit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                if(etKilograms.getText().toString().isEmpty() || etCentimetres.getText().toString().isEmpty()){
+                    Toast.makeText(MainActivity.this,"Enter all fields!",Toast.LENGTH_SHORT).show();
+                }
+                else {
+                    double Kilograms = Double.parseDouble(etKilograms.getText().toString());
+                    double Centimetres = Double.parseDouble(etCentimetres.getText().toString());
+                    double metre = Centimetres / 100;
+                    double BMI = (Kilograms / metre) / metre;
+                    String BMIresult;
+                    if (BMI <= 18.5) {
+                        BMIresult = "underweight";
+                    } else if (BMI < 25) {
+                        BMIresult = "normal weight";
+                    } else if (BMI < 30) {
+                        BMIresult = "Overweight";
+                    } else {
+                        BMIresult = "Obese";
+                    }
+                    double maxweight;
+                    double minweight;
+                    maxweight = 25 * metre * metre;
+                    minweight = 18.5 * metre * metre;
+                    String result = "Your BMI shows you are " + BMIresult + "\n" +
+                            "Your weight should be between " + minweight + " and " + maxweight + ".";
+                    tvResults.setText(result);
+                    tvResults.setVisibility(View.VISIBLE);
+                }
+            }
+        });
+
+    }
+
+}
+
