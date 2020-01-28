@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">BMI calculator</string>
+    <string name="id_hint">Enter Weight in KGs</string>
+    <string name="submit_button">Calculate BMI</string>
+    <string name="text">Text</string>
+    <string name="dob">Date of birth:</string>
+    <string name="gender">Gender:</string>
+    <string name="nationality">Nationality:</string>
+    <string name="newline">\\n</string>
+    <string name="entercentimetres">Enter Height in Centimetres</string>
+</resources>
