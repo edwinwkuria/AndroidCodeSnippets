@@ -1,0 +1,13 @@
+1. Add Implementation to the gradle scripts files-> Build.gradle module app: Add Implementation(recycler view and cardview).
++
+    implementation 'com.android.support:cardview-v7:29.0.0-rc1'
+    implementation 'com.android.support:recyclerview-v7:29.0.0-rc1'
+2. Create a new Java class that represent items on the list.
+Create values and generate: constructors, getters and setters. 
+
+3. Create a new list item under the layouts file with a linear layout. 
+
+4. Create a new Java class to set the values
+
+
+
