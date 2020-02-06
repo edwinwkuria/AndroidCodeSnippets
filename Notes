@@ -28,3 +28,66 @@ They handle communication between Android OS and applications.
 Content Providers
 
 They handle data and database management issues.
+
+<activity>elements for activities
+
+<service> elements for services
+
+<receiver> elements for broadcast receivers
+
+<provider> elements for content providers
+
+
+1	
+anim/
+
+XML files that define property animations. They are saved in res/anim/ folder and accessed from the R.anim class.
+
+2	
+color/
+
+XML files that define a state list of colors. They are saved in res/color/ and accessed from the R.color class.
+
+3	
+drawable/
+
+Image files like .png, .jpg, .gif or XML files that are compiled into bitmaps, state lists, shapes, animation drawable. They are saved in res/drawable/ and accessed from the R.drawable class.
+
+4	
+layout/
+
+XML files that define a user interface layout. They are saved in res/layout/ and accessed from the R.layout class.
+
+5	
+menu/
+
+XML files that define application menus, such as an Options Menu, Context Menu, or Sub Menu. They are saved in res/menu/ and accessed from the R.menu class.
+
+6	
+raw/
+
+Arbitrary files to save in their raw form. You need to call Resources.openRawResource() with the resource ID, which is R.raw.filename to open such raw files.
+
+7	
+values/
+
+XML files that contain simple values, such as strings, integers, and colors. For example, here are some filename conventions for resources you can create in this directory −
+
+arrays.xml for resource arrays, and accessed from the R.array class.
+
+integers.xml for resource integers, and accessed from the R.integer class.
+
+bools.xml for resource boolean, and accessed from the R.bool class.
+
+colors.xml for color values, and accessed from the R.color class.
+
+dimens.xml for dimension values, and accessed from the R.dimen class.
+
+strings.xml for string values, and accessed from the R.string class.
+
+styles.xml for styles, and accessed from the R.style class.
+
+8	
+xml/
+
+Arbitrary XML files that can be read at runtime by calling Resources.getXML(). You can save various configuration files here which will be used at run time.
