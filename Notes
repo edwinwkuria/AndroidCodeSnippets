@@ -1,0 +1,30 @@
+Activity Manager − Controls all aspects of the application lifecycle and activity stack.
+
+Content Providers − Allows applications to publish and share data with other applications.
+
+Resource Manager − Provides access to non-code embedded resources such as strings, color settings and user interface layouts.
+
+Notifications Manager − Allows applications to display alerts and notifications to the user.
+
+View System − An extensible set of views used to create application user interfaces.
+
+Application components:
+	
+Activities
+
+They dictate the UI and handle the user interaction to the smart phone screen.
+
+2	
+Services
+
+They handle background processing associated with an application.
+
+3	
+Broadcast Receivers
+
+They handle communication between Android OS and applications.
+
+4	
+Content Providers
+
+They handle data and database management issues.
