@@ -1,0 +1,48 @@
+    public class SavingDataInBackground extends AsyncTask<Integer,Integer, String>
+    {
+        ProgressDialog dialog;
+        @Override
+        protected void onPreExecute() {
+            super.onPreExecute();
+
+            dialog = new ProgressDialog(MainActivity.this);
+            dialog.setProgressStyle(ProgressDialog.STYLE_HORIZONTAL);
+            //Decide on the figure to use as the maximum
+            dialog.setMax(100);
+            dialog.show();
+        }
+
+        @Override
+        protected String doInBackground(Integer... integers) {
+            //To pass in values from the Main Activity use: new NameOfAsyncClass().execute(1,2,3,);
+            //Accept and use the value in integers[position]
+            /*To try not slow down the App use Current and Previous Progress
+
+            double CurrentProgress = 0 , PreviousProgress =0
+            currentProgress = Measure of value (i/integer[0]
+            if(currentProgress - PreviousProgress >= 0.02)
+            {
+                PublishProgress(i);
+                PreviousProgress = CurrentProgress
+            }
+             */
+            //Code Logic goes in here
+            //Returns the result
+            return null;
+        }
+
+        @Override
+        protected void onProgressUpdate(Integer... values) {
+            super.onProgressUpdate(values);
+
+            dialog.setProgress(values[0]);
+            //dialog.incrementProgressBy();
+        }
+
+        @Override
+        protected void onPostExecute(String s) {
+            super.onPostExecute(s);
+            //Remove the dialog
+            dialog.dismiss();
+        }
+    }
