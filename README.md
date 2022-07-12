@@ -1,2 +1,2 @@
 # AndroidCodeSnippets
-Useful code snippets I found for android
+Useful java code snippets I found while learning android with Java. 
